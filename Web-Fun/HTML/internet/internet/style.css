@@ -1,0 +1,233 @@
+body{
+    margin: 0px auto;
+}
+
+
+.main {
+    width: 43%;
+
+}
+
+.box {
+    display: flex;
+}
+
+.internet {
+    display: flex;
+}
+
+.net {
+    font-size: 50px;
+    color: blue;
+    margin-left: 90px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.png {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    padding-top: 10px;
+
+}
+
+.nav {
+    background-color: #4b7faa;
+    height: 40px;
+    color: aliceblue;
+
+}
+
+.world {
+    text-align: left;
+    font-size: 20px;
+    text-align: center;
+}
+
+.left-section {
+    width: 230px;
+    height: 700px;
+}
+
+.so {
+    font-size: 20px;
+}
+
+.an {
+    font-size: 20px;
+}
+
+.submit {
+    width: 180px;
+    height: 40px;
+    background-color: #4983b6;
+    color: aliceblue;
+    font-size: 15px;
+    border-radius: 8%;
+    margin-bottom: 5px;
+}
+
+.more {
+    background-color: #ed9120;
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 8%;
+}
+
+#background {
+    width: 220px;
+    height: 420px;
+
+
+}
+
+.career {
+    position: absolute;
+    right: 0px;
+    top: 1px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ninja {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.ninj {
+    width: 100px;
+    height: 100px;
+
+
+}
+
+.Reinvent {
+    color: aliceblue;
+    font-size: 27px;
+    margin-left: 15px;
+}
+
+.learn {
+    background-color: #59ccdf;
+    width: 150px;
+    height: 30px;
+    border-radius: 11%;
+    margin-left: 20px;
+}
+
+.right-section {
+    width: 800px;
+    height: 700px;
+    position: relative;
+
+}
+
+.house {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+
+}
+
+h1 {
+    font-size: 20px;
+    margin-left: 25px;
+    color: #4983b6;
+}
+
+.top {
+    display: flex;
+    margin-left: 20px;
+    
+  
+
+}
+.mon{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.phone {
+    display: flex;
+    /* justify-content: end;
+    text-align: end;
+    align-items: end; */
+    margin-left: 300px;
+    margin-top: 5px;
+}
+
+.call {
+    width: 40px;
+    height: 40px;
+   
+   
+    
+}
+
+.number {
+    font-size: 30px;
+}
+
+a {
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.rr {
+    width: 840px;
+    height: 2px;
+}
+
+.clients {
+    list-style-type: none;
+    width: 70%;
+
+}
+
+.header {}
+
+.circle {
+    width: 330px;
+    margin-left: 100px;
+    left: 100px;
+}
+
+.head {
+    margin-bottom: 100px;
+}
+
+.act {
+    color: #4983b6;
+    margin-left: 20px;
+}
+
+.browser {
+    width: 650px;
+}
+
+.CSS {
+    width: 150px;
+}
+
+.BIG {
+    display: flex;
+    border-top: 10px solid #0485db;
+    border-left: 10px solid #0485db;
+    border-right: 10px solid #0485db;
+    padding: 10px;
+    /* margin-bottom: 100px; */
+    width: 650px;
+}
+
+.Java {
+    width: 540px;
+    margin-left: 20px;
+}

@@ -1,0 +1,30 @@
+#calculator{
+    background-color:#222222 ;
+    width: 200px;
+    height: 280px;
+    text-align: center;
+    /* padding: 25px; */
+    margin: 0px auto;
+    margin-top: 50px;
+
+}
+#equals{
+    width: 130px;
+    height: 30px;
+    background-color: #cccccc;
+    border-radius: 20% ;
+}
+.row{
+    padding: 10px;
+    /* padding-left: 15px; */
+
+}
+.operator{
+    background-color: #ff8c00;
+     font-size: 20px;
+}
+button{
+    color: white;
+    background-color: #666666;
+    font-size: 20px;
+}
