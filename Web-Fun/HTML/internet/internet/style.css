@@ -5,7 +5,7 @@ body{
 
 .main {
     width: 43%;
-
+margin: 0 auto;
 }
 
 .box {
@@ -14,6 +14,10 @@ body{
 
 .internet {
     display: flex;
+    width: 43%;
+    margin: 0 auto;
+    align-items: center;
+
 }
 
 .net {
@@ -22,6 +26,9 @@ body{
     margin-left: 90px;
     padding-top: 10px;
     width: 100%;
+}
+.thenet{
+    
 }
 
 .png {
@@ -34,15 +41,17 @@ body{
 
 .nav {
     background-color: #4b7faa;
-    height: 40px;
+    height: 47px;
     color: aliceblue;
 
 }
 
 .world {
     text-align: left;
-    font-size: 20px;
-    text-align: center;
+    font-size: 25px;
+    margin-left: 25px;
+    
+   
 }
 
 .left-section {
@@ -149,10 +158,8 @@ h1 {
 
 }
 .mon{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    margin-left: 140px;
 
 }
 .phone {
@@ -188,7 +195,7 @@ a {
 
 .clients {
     list-style-type: none;
-    width: 70%;
+    width: 88%;
 
 }
 
