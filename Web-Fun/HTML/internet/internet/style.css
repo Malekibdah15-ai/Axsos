@@ -43,7 +43,7 @@ margin: 0 auto;
     background-color: #4b7faa;
     height: 47px;
     color: aliceblue;
-
+    width: 100%;
 }
 
 .world {
@@ -88,7 +88,7 @@ margin: 0 auto;
 #background {
     width: 220px;
     height: 420px;
-
+    position: relative;
 
 }
 
@@ -108,9 +108,12 @@ margin: 0 auto;
 }
 
 .ninj {
-    width: 100px;
-    height: 100px;
-
+    width: 10px;
+    height: 140px;
+    position: absolute;
+    top: 140px;
+    right: 20px;
+    width: 200px;
 
 }
 
@@ -118,14 +121,20 @@ margin: 0 auto;
     color: aliceblue;
     font-size: 27px;
     margin-left: 15px;
+    width: 190px;
+    height: 100px;
 }
 
 .learn {
     background-color: #59ccdf;
-    width: 150px;
+    color: aliceblue;
+    width: 170px;
     height: 30px;
-    border-radius: 11%;
+    border-radius: 9%;
     margin-left: 20px;
+    position: absolute;
+    top: 350px;
+    font-size: 15px;
 }
 
 .right-section {
@@ -160,23 +169,34 @@ h1 {
 .mon{
     text-align: center;
     margin-left: 140px;
+    width: 300px;
+    height: 30px;
+    justify-content: center;
 
+}
+.sd{
+    font-size: 20px;
+    color: #0485db;
+}
+.dif{
+    font-size: 10px;
+}
+.di{
+    font-size: 10px;
 }
 .phone {
     display: flex;
     /* justify-content: end;
     text-align: end;
     align-items: end; */
-    margin-left: 300px;
+    margin-left: 250px;
     margin-top: 5px;
 }
 
 .call {
     width: 40px;
     height: 40px;
-   
-   
-    
+    margin-left: 50px;
 }
 
 .number {
@@ -189,7 +209,7 @@ a {
 }
 
 .rr {
-    width: 840px;
+    width: 600px;
     height: 2px;
 }
 
@@ -218,10 +238,12 @@ a {
 
 .browser {
     width: 650px;
+    margin-left: 30px;
 }
 
 .CSS {
-    width: 150px;
+    width: 130px;
+    height: 160px;
 }
 
 .BIG {
@@ -232,9 +254,11 @@ a {
     padding: 10px;
     /* margin-bottom: 100px; */
     width: 650px;
+    margin-left: 40px;
+    margin-top: 30px;
 }
 
 .Java {
     width: 540px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
