@@ -1,0 +1,68 @@
+.box {
+
+    /* border: 1px grey; */
+    position: relative;
+    justify-self: center;
+
+
+
+
+}
+
+
+.top {
+    background-color: blue;
+    /* width: 475px; */
+    height: 100px;
+}
+
+.bottom {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    padding: 35px;
+    border: 1px solid gray;
+
+
+
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    top: 55px;
+}
+
+.map {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 30px;
+    top: 225px;
+
+
+}
+
+.ger {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+}
+
+.profile-location {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.edit-profile{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
