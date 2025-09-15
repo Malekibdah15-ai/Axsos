@@ -1,11 +1,12 @@
 .nav {
-    width: 80%;
+    width: 100%;
     background-color: #333333;
     display: flex;
     align-items: center;
     justify-content: space-between;                                         
     padding: 10px;
     margin-left: 20px;
+    height: 100px;
 
 
 }
@@ -34,7 +35,7 @@ h1 {
 }
 .find{
     display: flex;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 li{
@@ -61,9 +62,12 @@ a {
     width: 100px;
     height: 55px;
     margin-top: 45px;
-    font-size: 20px;
+    font-size: 25px;
     /* padding-left: 15px; */
     /* box-shadow: 5px 5px 5px black; */
     border: 5px solid black;
+    box-shadow: 5px 5px 5px black;
+    margin-left: 10px;
+    width: 150px;
 
 }
