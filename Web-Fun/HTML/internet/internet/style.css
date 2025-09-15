@@ -1,11 +1,12 @@
-body{
+body {
     margin: 0px auto;
 }
 
 
 .main {
     width: 43%;
-margin: 0 auto;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 
 .box {
@@ -17,25 +18,26 @@ margin: 0 auto;
     width: 43%;
     margin: 0 auto;
     align-items: center;
-
+    position: absolute;
+    left: 30%;
+    top: 1px;
+    
 }
 
 .net {
     font-size: 50px;
     color: blue;
-    margin-left: 90px;
-    padding-top: 10px;
-    width: 100%;
+    margin-left: 10px;
+    padding-top: 20px;
+
 }
-.thenet{
-    
-}
+
+
 
 .png {
     width: 90px;
     height: 90px;
-    position: absolute;
-    padding-top: 10px;
+        
 
 }
 
@@ -43,20 +45,27 @@ margin: 0 auto;
     background-color: #4b7faa;
     height: 47px;
     color: aliceblue;
-    width: 100%;
+    width: 1000px;
+}
+
+.blue {
+    color: #0485db;
+}
+
+.red {
+    color: red;
 }
 
 .world {
     text-align: left;
     font-size: 25px;
     margin-left: 25px;
-    
-   
+    padding-top: 5px;
 }
 
 .left-section {
     width: 230px;
-    height: 700px;
+    height: 600px;
 }
 
 .so {
@@ -65,29 +74,43 @@ margin: 0 auto;
 
 .an {
     font-size: 20px;
+    width: 230px;
+    height: 70px;
+}
+
+.hrr {
+    margin-bottom: 20px;
+    width: 210px;
+}
+
+.bttn {
+    margin-bottom: 50px;
+    height: 60px;
 }
 
 .submit {
-    width: 180px;
+    width: 210px;
     height: 40px;
     background-color: #4983b6;
     color: aliceblue;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 8%;
     margin-bottom: 5px;
+
 }
 
 .more {
     background-color: #ed9120;
-    width: 180px;
+    color: aliceblue;
+    width: 210px;
     height: 40px;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 8%;
 }
 
 #background {
     width: 220px;
-    height: 420px;
+    height: 370px;
     position: relative;
 
 }
@@ -108,12 +131,12 @@ margin: 0 auto;
 }
 
 .ninj {
-    width: 10px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     position: absolute;
     top: 140px;
-    right: 20px;
-    width: 200px;
+    right: 70px;
+    /* width: 200px; */
 
 }
 
@@ -133,14 +156,16 @@ margin: 0 auto;
     border-radius: 9%;
     margin-left: 20px;
     position: absolute;
-    top: 350px;
+    top: 300px;
     font-size: 15px;
+    right: 40px;
 }
 
 .right-section {
     width: 800px;
     height: 700px;
     position: relative;
+    margin-left: 10px;
 
 }
 
@@ -149,8 +174,12 @@ margin: 0 auto;
     height: 20px;
     position: absolute;
     top: 13px;
-    left: 20px;
+    left: 0px;
 
+}
+
+.dns {
+    margin-left: 90px;
 }
 
 h1 {
@@ -162,33 +191,42 @@ h1 {
 .top {
     display: flex;
     margin-left: 20px;
-    
-  
-
-}
-.mon{
-    text-align: center;
-    margin-left: 140px;
-    width: 300px;
-    height: 30px;
     justify-content: center;
 
+
+
 }
-.sd{
+
+.mon {
+    text-align: center;
+    margin-left: 140px;
+    width: 430px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    /* margin-top: 10px; */
+
+}
+
+.sd {
     font-size: 20px;
     color: #0485db;
+    flex-direction: column;
+    margin-top: 1px;
+    /* margin-right: 100px; */
 }
-.dif{
+
+.dif {
     font-size: 10px;
 }
-.di{
+
+.di {
     font-size: 10px;
 }
+
 .phone {
     display: flex;
-    /* justify-content: end;
-    text-align: end;
-    align-items: end; */
+    height: 50px;
     margin-left: 250px;
     margin-top: 5px;
 }
@@ -196,7 +234,8 @@ h1 {
 .call {
     width: 40px;
     height: 40px;
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .number {
@@ -209,14 +248,19 @@ a {
 }
 
 .rr {
-    width: 600px;
+    width: 750px;
     height: 2px;
+    margin-left: 20px;
 }
 
 .clients {
     list-style-type: none;
     width: 88%;
 
+}
+
+.computere {
+    margin-left: 25px;
 }
 
 .header {}
@@ -233,7 +277,7 @@ a {
 
 .act {
     color: #4983b6;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .browser {
