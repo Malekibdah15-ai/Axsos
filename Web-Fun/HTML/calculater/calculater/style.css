@@ -1,7 +1,7 @@
 #calculator{
     background-color:#222222 ;
-    width: 200px;
-    height: 280px;
+    width: 300px;
+    height: 390px;
     text-align: center;
     /* padding: 25px; */
     margin: 0px auto;
@@ -9,22 +9,22 @@
 
 }
 #equals{
-    width: 130px;
-    height: 30px;
+    width: 170px;
+    height: 40px;
     background-color: #cccccc;
     border-radius: 20% ;
 }
 .row{
     padding: 10px;
-    /* padding-left: 15px; */
+    font-size: 40px;
 
 }
 .operator{
     background-color: #ff8c00;
-     font-size: 20px;
+     font-size: 40px;
 }
 button{
     color: white;
     background-color: #666666;
-    font-size: 20px;
+    font-size: 40px;
 }

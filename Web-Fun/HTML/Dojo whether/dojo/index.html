@@ -6,65 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
 
 <body>
-    <body>
-        <div class="container">
-            <header>
-                <h1>DojoWeather</h1>
-                <div class="cities">
-                    <a href="#">Burbank</a>
-                    <a href="#">chicago</a>
-                    <a href="#">Dallas</a>
-                </div>
-            </header>
-            
-            <div class="city-title">
-                <h2>San Jose</h2>
-                <div class="temp-unit">
-                    <label>show temperature in</label>
-                    <select>
-                        <option></option>
-                        <option>فهرنهايت (°F)</option>
-                    </select>
-                </div>
+    <header>
+        <h1>DojoWeather</h1>
+        <div class="cites">
+            <ul class="usa">
+                <li id="burbank" onclick="display(this)">Burank</li>
+                <li id="chigago" onclick="display(this)">Chicago</li>
+                <li id="dallas" onclick="display(this)">Dallas</li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="city-title">
+            <h2>San Jose</h2>
+            <div class="temp">
+                <p>show temprature in</p>
+                <select id="show-temp" onchange="convert()">
+                    <option value="c">C</option>
+                    <option value="f">F</option>
+
+                </select>
             </div>
-            
-            <div class="weather-cards">
-                <div class="weather-card">
-                    <h3>Today</h3>
-                    <div class="weather-desc">some rain</div>
-                    <div class="temperature">24° / 18°</div>
-                </div>
-                
-                <div class="weather-card">
-                    <h3>Tomorrow</h3>
-                    <div class="weather-desc">some sun</div>
-                    <div class="temperature">27° / 19°</div>
-                </div>
-                
-                <div class="weather-card">
-                    <h3>Friday</h3>
-                    <div class="weather-desc">some clouds</div>
-                    <div class="temperature">21° / 16°</div>
-                </div>
-                
-                <div class="weather-card">
-                    <h3>Saturday</h3>
-                    <div class="weather-desc">some sun</div>
-                    <div class="temperature">26° / 17°</div>
-                </div>
+
+        </div>
+        <hr>
+        <div class="weather-cards">
+            <div class="weather-card">
+                <h3>Today</h3>
+                <img id="cloud" src="some_rain.png">
+                <div class="weather-desc">some rain</div>
+                <div class="temperature"><span class="red">24°</span><span class="blue">18°</span></div>
             </div>
-            
-            <div class="cookie-notice">
-                <div class="cookie-content">
-                    <h3>Step1 cookie time</h3>
-                    <p>we use cookies (sadly not the ediblr ones)to personlize content and ads,to provide social media featers and to analize our traffic .read more</p>
-                </div>
-                <button>I accept</button>
+            <div class="weather-card">
+                <h3>Tomorrow</h3>
+                <img id="cloud" src="some_sun.png">
+                <div class="weather-desc">some sun</div>
+                <div class="temperature"><span class="red">27°</span><span class="blue">19°</span></div>
+            </div>
+
+            <div class="weather-card">
+                <h3>Friday</h3>
+                <img id="cloud" src="some_clouds.png">
+                <div class="weather-desc">some clouds</div>
+                <div class="temperature"><span class="red">21°</span><span class="blue">16°</span></div>
+            </div>
+
+            <div class="weather-card">
+                <h3>Saturday</h3>
+                <img id="cloud" src="some_sun.png">
+                <div class="weather-desc">some sun</div>
+                <div class="temperature"><span class="red">26°</span><span class="blue">17°</span></div>
             </div>
         </div>
-</body>
+        <div class="box">
+            <img class="cokie" src="cookie.png">
+            <div class="stop">
+                <h4>stop! cookie time</h4>
+                <p class="use"> use cookies (sadly not the edible ones) to personalize content and ads,to provide social media
+                    feature and to analyse our traffic.<span>Read more</span></p>
+            </div>
+            <button class="accept" onclick="hide()">I Accept</button>
+        </div>
 
+
+
+
+
+    </div>
+
+
+</body>
+<script src="script.js"></script>
 </html>

@@ -1,0 +1,232 @@
+ <div class="container">
+            <header>
+                <h1>DojoWeather</h1>
+                <div class="cities">
+                    <a href="#">Burbank</a>
+                    <a href="#">chicago</a>
+                    <a href="#">Dallas</a>
+                </div>
+            </header>
+            
+            <div class="city-title">
+                <h2>San Jose</h2>
+                <div class="temp-unit">
+                    <label>show temperature in</label>
+                    <select>
+                        <option></option>
+                        <option>فهرنهايت (°F)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="weather-cards">
+                <div class="weather-card">
+                    <h3>Today</h3>
+                    <div class="weather-desc">some rain</div>
+                    <div class="temperature">24° / 18°</div>
+                </div><div class="weather-card">
+                    <h3>Tomorrow</h3>
+                    <div class="weather-desc">some sun</div>
+                    <div class="temperature">27° / 19°</div>
+                </div>
+                
+                <div class="weather-card">
+                    <h3>Friday</h3>
+                    <div class="weather-desc">some clouds</div>
+                    <div class="temperature">21° / 16°</div>
+                </div>
+                
+                <div class="weather-card">
+                    <h3>Saturday</h3>
+                    <div class="weather-desc">some sun</div>
+                    <div class="temperature">26° / 17°</div>
+                </div>
+                
+                
+            </div>
+            
+            <div class="cookie-notice">
+                <div class="cookie-content">
+                    <h3>Step1 cookie time</h3>
+                    <p>we use cookies (sadly not the ediblr ones)to personlize content and ads,to provide social media featers and to analize our traffic .read more</p>
+                </div>
+                <button>I accept</button>
+            </div>
+        </div>
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(to right, #3494e6, #2c3e50);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin: 0;
+        }
+        
+        .cities {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .cities a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .cities a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        
+        .city-title {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .city-title h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+        
+        .temp-unit {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .temp-unit label {
+            font-weight: 500;
+        }
+        
+        .weather-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        .weather-card {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+        
+        .weather-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .weather-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .weather-desc {
+            color: #3494e6;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+        
+        .temperature {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e67e22;
+            margin: 10px 0;
+        }
+        
+        .cookie-notice {
+            background-color: #f8f9fa;
+            border-top: 1px solid #eee;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .cookie-content {
+            flex: 1;
+        }
+        
+        .cookie-notice h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .cookie-notice p {
+            color: #666;
+        }
+        
+        .cookie-notice button {
+            background-color: #3494e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .cookie-notice button:hover {
+            background-color: #2980b9;
+        }
+        
+         (ax-width: 768px) 
+            .weather-cards {
+                flex-direction: column;
+            }
+            
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cities {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .cookie-notice {
+                flex-direction: column;
+                text-align: center;
+            }
