@@ -1,14 +1,11 @@
-function log(button){
-     const likeCount = button.parentElement.querySelector(".lik");
-     console.log(likeCount.textContent);
-
-     
-     let count = parseInt(likeCount.textContent);
-          console.log(count);
-     count++;
-     console.log(count);
-     
-     likeCount.textContent = count + " like(s)";
-          console.log(likeCount.textContent);
-
-}
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        for(let i = 0; i < nums.length; i++){
+            for(let j = 0; j < nums.length; j++){
+                if(nums[i] + nums[j] == target);
+                return [i,j];
+            }
+        }
+    }
+};
