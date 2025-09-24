@@ -31,13 +31,42 @@ students = [
          {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
 
-# for el in students:
-#     for key,value in el.items():
-#         print(f"{key} - {value} ")
-
 for el in students:
-    for value in el.items():
-        print(f"{value}")
+    for key,value in el.items():
+        print(f"{key} - {value} ")
+
+def itreat(student):
+
+    for k in range(len(student)):
+        print(student[k]["first_name"])
+        
+
+itreat(students)
+
+def itreat(student):
+
+    for k in range(len(student)):
+        print(student[k]["last_name"])
+        
+itreat(students)
 
 
-    
+dojo = {
+   'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+   'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+print()
+print()
+
+def printInfo(some_dict):
+    length = len(some_dict["locations"])
+    print(str(length)+["locations"])
+    for i in some_dict(["locations"]):
+        print(i)
+    print()
+    length2 = len(some_dict['instructors'])
+    print(str(length2)+ " INSTRUCTORS" )
+    for i in some_dict['instructors']:
+        print(i)
+printInfo(dojo)
