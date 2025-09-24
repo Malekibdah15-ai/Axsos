@@ -18,8 +18,8 @@ class User:
     def display_balance(self):
         print(f"User: {self.name},Balance : {self.balance}" )
        
-       
-    
+
+
 
 user1 = User("Malek")
 user2 = User("Ahmad")
