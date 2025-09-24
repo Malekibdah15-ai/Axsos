@@ -1,4 +1,4 @@
-
+#1
 for i in range(151):
     print (i)
 
@@ -8,17 +8,18 @@ for i in range (5, 1001, 5):
 for i in range (1, 101, 1):
 
 
-    if i % 5 == 0:
-
-      print("coding")
-
-    elif i % 10 == 0:
+    if i % 10 == 0:
 
       print("codingDojo")
+
+    elif i % 5 == 0:
+
+      print("coding")
 
     else:
        print(i)
 sum = 0
+
 for i in range (0, 500001):
     if i % 2 != 0:
         sum+=i
