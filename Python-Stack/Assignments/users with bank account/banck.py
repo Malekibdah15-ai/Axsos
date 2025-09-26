@@ -30,10 +30,33 @@ class BankAcount:
         if self.balance > 0:
             print(f"Applied interest. New balance: {self.balance}")
         
-        
-        
-account1 = BankAcount(0, 0.02)
-account2 = BankAcount(100, 0.05)
 
-account1.deposit(200).deposit(1523).deposit(8989).withdraw(1975).display_account_info()
-account2.deposit(200).deposit(3434).withdraw(100).withdraw(100).withdraw(2244).withdraw(345).display_account_info()
+
+class User:
+
+    def __init__(self, name):
+        self.name = name
+        self.account = BankAcount(int_rate=0.02, balance=0)
+
+
+    def make_Deposit(self, amount):
+        self.account.deposit(amount)
+      
+        return self
+    
+    def make_withdrawal(self, amount):
+        self.account.deposit(amount)
+        
+        return self
+   
+
+    def display_balance(self):
+        print(f"User: {self.name},balance {self.account.balance}" )
+       
+        return self
+    
+    
+user1 = User("Malek")
+
+
+user1.make_Deposit(1000).make_Deposit(1000).make_Deposit(1000).make_withdrawal(800).display_balance()

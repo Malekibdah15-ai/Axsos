@@ -22,7 +22,7 @@ sum = 0
 
 for i in range (0, 500001):
     if i % 2 != 0:
-        sum+=i
+        sum += i
 print(sum)
 
 for i in range (2018,0, -4):
@@ -33,4 +33,6 @@ mult = 3
 highnum = 9
 for i in range (3, 10, 3):
     print(i)
+
+
 
