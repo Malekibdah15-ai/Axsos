@@ -9,15 +9,12 @@ print (count(5))
 
 #2
 def result_pm(num):
-    i = 0
-    while i < 2:
-        if i == 0:
-            print (num[i])
-        elif i == 1:
-            return num[i]
-        i +=1
+    print(num[0])
+    return num[1]
 
-result_pm([5,7])
+x = result_pm([3,4])
+print(x)
+
 
 #3
 def list_sum(numbers):
@@ -52,3 +49,13 @@ def count(nums):
         list.append(i)
     return list
 print(count(5))
+
+
+
+
+
+
+
+
+
+
