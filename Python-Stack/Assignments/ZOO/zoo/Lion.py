@@ -16,4 +16,4 @@ class Lion(Animal):
         if self.length >= 70:
             super().feed(healthincrease, happinessincrease).display_info()
      
-    
+malek = Lion()

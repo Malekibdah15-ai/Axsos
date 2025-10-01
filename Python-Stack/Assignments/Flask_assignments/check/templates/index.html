@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        {%for i in range(8)%}
+            {% if i % 2 == 0 %}
+                {% for x in range(8)%}
+                    {% if x%2 == 0%}
+                    <div style="background-color: red;" class="square"></div>
+                    {% else%}
+                    <div style="background-color: black;" class="square"></div>
+                    {%endif%}
+                {% endfor %}
+            {%else%}
+                {% for x in range(8)%}
+                    {% if x%2 == 0%}
+                    <div style="background-color: black;" class="square"></div>
+                    {% else%}
+                    <div style="background-color: red;" class="square"></div>
+                    {%endif%}
+                {% endfor %}
+            {%endif%}
+        {%endfor%}
+                 
+    </div>
+
+</body>
+
+</html>

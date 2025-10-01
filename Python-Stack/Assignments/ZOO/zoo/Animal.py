@@ -15,7 +15,7 @@ class Animal:
     def feed(self,):
         self.health_level += 10
         self.happiness_level += 10
-        
+
             
         
     

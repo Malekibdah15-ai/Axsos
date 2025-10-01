@@ -21,10 +21,3 @@ if __name__=="__main__":
     app.run(debug=True)
     
     
-    
-#     @app.route('/batata/<int>/<name>')
-# def Hello(name, int):
-#     i = int
-#     for i in name:
-#         print(int * name)
-#     return f"{name} * {int} "

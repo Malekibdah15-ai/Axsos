@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <form action="/users" method="post">
+            <div class="box">
+                <label class="you" for="name">your name</label>
+                <input class="rec" id="name" type="text" name='name'>
+            </div>
+            <div class="san">
+                <label class="dojo" for="location">dojolocation</label>
+                <select class="locat" name="location" id="location">
+                    <option value="sanjose">seatle</option>
+                    <option value="sanjose">Newyork</option>
+                    <option value="sanjose">Los angles</option>
+                </select>
+            </div>
+            <div class="Python">
+                <label class="lang" for="Language">favorrite Language</label>
+                <select class="java" name="Language" id="Language">
+                    <option value="python">javascript, java, mern</option>
+                </select>
+            </div>
+            <div class="option">
+                <label class="com" for="comment">Comment(optional)</label>
+                <textarea class="rectangle" name="comment" id="comment"></textarea>
+            </div>
+            <input class="Submit" type="Button" value="Button">
+        </form>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
