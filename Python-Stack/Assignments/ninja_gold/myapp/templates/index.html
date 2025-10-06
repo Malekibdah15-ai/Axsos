@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Gold Game</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <h1>your Gold</h1>
+    <label for="text"></label>
+
+    <div class="container">
+        <div class="box">
+            <h1>farm</h1>
+            <p>(earn 10-20 gold)</p>
+            <form action="/process_money" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="location" value="farm">
+                <button>find gold!</button>
+            </form>
+        </div>
+        <div class="box">
+            <h1>cave</h1>
+            <p>(earn 10-20 gold)</p>
+            <form action="/process_money" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="location" value="cave">
+                <button>find gold!</button>
+            </form>
+        </div>
+        <div class="box">
+            <h1>house</h1>
+            <p>(earn 10-20 gold)</p>
+            <form action="/process_money" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="location" value="house">
+                <button>find gold!</button>
+            </form>
+        </div>
+        <div class="box">
+            <h1>quest</h1>
+            <p>(earn 0-50 gold)</p>
+            <form action="/process_money" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="location" value="house">
+                <button>find gold!</button>
+            </form>
+        </div>
+    </div>
+    <div class="Activities">
+        <h3>Activity</h3>
+        <textarea class="rectangle" name="activities" id="activities"></textarea>
+        {% for log in request.session.activities %}
+
+        <p class="{{ log.color }}">{{ log.message }}</p>
+        {% endfor %}
+
+
+    </div>
+
+</body>
+
+</html>

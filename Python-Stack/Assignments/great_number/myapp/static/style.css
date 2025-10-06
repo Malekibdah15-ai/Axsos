@@ -1,0 +1,53 @@
+.form{
+    width: 400px;
+    height: 320px;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+
+.divisions{
+    width: 80%;
+    margin: 0 auto;
+
+}
+body{
+    padding-top: 50px;
+    width: 35%;
+    height: 1000px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+}
+.comments{
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+.rectangle{
+    margin-top: 10px;
+    width: 300px;
+    height: 100px;
+
+}
+.Submit{
+    background-color: rgb(74, 158, 74);
+    color: antiquewhite;
+    box-shadow: 2px 2px black;
+    text-align: end;
+}
+.Button{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.rec{
+    width: 150px;
+    height: 20px;
+}
