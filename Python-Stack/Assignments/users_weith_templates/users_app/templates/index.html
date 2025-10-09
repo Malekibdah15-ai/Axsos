@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>User Management</title>
+</head>
+
+<body>
+
+    <div class="rectangle">
+        <h1>All The Users</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.Name }}</td>
+                    <td>{{ user.Email }}</td>
+                    <td>{{ user.age }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>Add a User</h2>
+        <form class="forms" action="/users" method="post">
+            {% csrf_token %}
+            <div class="box">
+                <label class="fname" for="first">First Name</label>
+                <input class="rec" type="text" id="first" name="first" >
+
+                <label class="fname" for="last">Last Name</label>
+                <input class="rec" type="text" id="last" name="last" >
+            </div>
+
+            <div class="box">
+                <label for="email">Email</label>
+                <input class="container" type="email" id="email" name="email" >
+
+                <label for="age">Age</label>
+                <input class="container" type="number" id="age" name="age" min="0" >
+            </div>
+
+            <input type="submit" value="Add">
+            <!-- <button class="abdd" type="submit">Add</button> -->
+        </form>
+    </div>
+
+</body>
+
+</html>
